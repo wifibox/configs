@@ -1,0 +1,21 @@
+colorscheme darkblue
+"set nu
+syntax on
+set vb
+set cursorline
+"set tw=78
+set ts=2
+set sw=2
+set background=dark
+"set textwidth=0
+set nottybuiltin
+set fileencoding=utf-8
+"set mouse=a
+"set mouse=nvch
+set filetype=on
+set laststatus=2
+:nnoremap <silent> <F8> :Tlist<CR>
+set fileencodings=ucs-bom,utf-8,iso-8859-2,latin1
+"set fileencodings=iso-8859-2,latin1
+"set nofoldenable
+au BufNewFile,BufRead *.py,*.pyw        set expandtab ts=4 sw=4
