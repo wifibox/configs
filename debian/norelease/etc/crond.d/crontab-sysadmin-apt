@@ -1,0 +1,1 @@
+@hourly root            /usr/bin/apt-get -qq update

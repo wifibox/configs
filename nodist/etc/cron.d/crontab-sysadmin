@@ -1,5 +1,4 @@
 */2 * * * *     root    /home/admin/sbin/proc.sh
 @daily  root            /home/admin/sbin/backup_mysql.sh localhost
-@hourly root            /usr/bin/apt-get -qq update
 @hourly root            /usr/bin/find /var/log/ps/ -maxdepth 1 -type d -mtime +30 -exec rm -rf "{}" \;
 @hourly root            echo `date +\%F` > /var/run/backup_timestamp
