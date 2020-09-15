@@ -1,3 +1,1 @@
-*/2 * * * *     root    /usr/local/sbin/proc.sh
-@hourly root            /usr/bin/find /var/log/ps/ -maxdepth 1 -type d -mtime +30 -exec rm -rf "{}" \;
 @hourly root            echo `date +\%F` > /var/run/backup_timestamp
