@@ -1,1 +1,0 @@
-@hourly root            echo `date +\%F` > /var/run/backup_timestamp
