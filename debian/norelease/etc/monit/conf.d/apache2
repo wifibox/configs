@@ -1,0 +1,6 @@
+check process apache2 with pidfile /var/run/apache2/apache2.pid
+    start program = "/bin/systemctl start apache2" with timeout 60 seconds
+    stop program  = "/bin/systemctl stop apache2"
+    if failed host 127.0.0.1 port 80 type tcp
+        with timeout 20 seconds for 3 cycles 
+        then restart
